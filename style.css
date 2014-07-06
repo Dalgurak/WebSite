@@ -130,7 +130,7 @@ a{
 
 img{
     max-width: 100%;
-    border-radius: 100%;
+
 }
 
 body{
@@ -138,43 +138,48 @@ body{
 }
 
 .wrap{
-    width: 100%;
-    height: 100px;
-    background-color: #F04949;
+    width: 1000px;
+    height:auto;
+    margin: 0 auto;
+
 }
 
 /*navigation start*/
-
-.navigation{
+nav{
+    background-color: #F04949;
     width: 100%;
-    margin: 0 auto;
+    height: 120px;
+}
+nav ul{
+    text-align: center;
+
 }
 
-.navigation li{
-    display: inline-block;
+nav li{
+    display: inline;
     vertical-align: middle;
     padding: 5px 10px;
 }
 
-.navigation li a{
+nav li a{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 15px 10px;;
 }
 
-.navigation li a:hover{
+nav li a:hover{
     background-color: #203748;
     border-radius: 20px;
     padding: 10px 15px 10px;
 }
 
-.navigation li:first-child a{
+nav li:first-child a{
     text-decoration: none;
     padding: 0;
 }
 
-.navigation li:first-child a:hover {
+nav li:first-child a:hover {
     background-color: #F04949;
     border-radius: 0;
     padding: 0;
@@ -208,34 +213,35 @@ body{
     content: "\e008";
 }
 
+.logo img{
+    border-radius: 100%;
+}
+
 /*navigation end*/
 
 /*main start*/
-
-.main-wrap{
-    margin: 0 auto;
+main{
     width: 100%;
-    height: auto;
-    background-color: #203748;
 }
 
-.article-wrap{
-    width: 75%;
+
+main > section{
+    width: 70%;
     margin: 50px auto;
     display: inline;
     float: left;
 }
 
-article{
+main > section > article{
     margin-top: 3%;
-    margin-left: 8%;
-    width: 35%;
+    margin-left: 1%;
+    width: 44%;
     height: auto;
     display: inline-block;
     background-color: #39D084;
     border-radius: 10px;
     padding: 15px;
-    min-width: 300px;
+    min-width: 200px;
 
 }
 
@@ -243,17 +249,18 @@ article{
 
 /*aside start*/
 
-.aside-wrap{
-    margin-right: 2%;
-    margin-top: 3%;
+aside{
+    margin-right: 1%;
+    margin-top: 50px;
     width: 20%;
     display: inline;
     float: right;
-    min-width: 200px;
+    min-width: 180px;
 }
 
-.aside{
+aside > section{
     background-color: #EE742B;
+    border-radius: 10px;
     margin-bottom: 10%;
     width: 80%;
 }
